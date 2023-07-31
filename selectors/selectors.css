@@ -30,5 +30,38 @@ a:visited {
 .grand-child {
     height: 100px;
     width: 100px;
+}
+
+
+.child:nth-child(even) > .grand-child {
+    background-color: fuchsia;
+}
+
+.child:nth-child(odd) > .grand-child {
+    background-color: blue;
+}
+
+.parent > .child:nth-last-child(3) > .grand-child {
+    background-color: red;
+    height: 150vh;
+}
+
+.parent > .child .grand-child:active {
+    background-color: darkgrey;
+}
+
+#fodase[type$="se"] {
     background-color: green;
+    position: sticky;
+    top: 50px;
+}
+
+.child:nth-child(2) .grand-child {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+
+
 }
