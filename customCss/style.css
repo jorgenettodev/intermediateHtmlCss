@@ -1,0 +1,22 @@
+:root {
+    --green: green;
+    --red: rgb(255,0,0);
+    --light-blue: aliceblue;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    background-color: var(--light-blue);
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: var(--red);
+}
