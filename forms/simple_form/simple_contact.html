@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <form action="/my-handling-form-page" method="post"></form>
-        <fieldset>
-            <legend>Contact</legend>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="user_message" cols="40" rows="5" placeholder="Type your message here"></textarea>
-
-            <button type="submit">Send your message</button>
-        </fieldset>
+    <div class="container">
+        <form action="/my-handling-form-page" method="post"></form>
+            <fieldset>
+                <legend>Contact</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="user_message" cols="40" rows="5" placeholder="Type your message here"></textarea>
+                </div>
+                <button type="submit">Send your message</button>
+            </fieldset>
+    </div>
 </html>
