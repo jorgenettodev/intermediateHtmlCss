@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TODO: 
+    Name: A text input field where the user can enter their name.
+    Email: A text input field where the user can enter their email address.
+    Message: A textarea where the user can enter their message. -->
+    <form action="example.com" method="post">
+        <label for="user_name">Name</label>
+        <input type="text" id="user_name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="youremail@email.com" required>
+
+    </form>
+    <script>
+        let form = document.querySelector('form')
+        form.addEventListener('submit', (e)=> {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
