@@ -91,6 +91,31 @@ body {
     box-shadow: none;
 }
 
+/* legacy radio buttons */
+.legacy_form__row {
+    border: none;
+    margin-bottom: 40px;
+}
+
+.legacy_form__row legend {
+    margin-bottom: 15px;
+}
+
+.legacy_form__row .radio_label {
+    display: block;
+    font-size: 14px;
+    padding: 0 20px 0 10px;
+}
+
+.legacy_form__row input[type='radio'] {
+    margin-top: 2px;
+}
+
+.legacy_form__row .radio_label,
+.legacy_form__row input[type='radio'] {
+    float: left;
+}
+
 /* desktop version */
 @media only screen and (min-width: 700px) {     /* apply only on screens bigger than 700px (desktop) */
     .speaker-form__header,
@@ -98,7 +123,7 @@ body {
         width: 600px;
     }
 
-    .form__row {
+    .form__row{
         flex-direction: row;
         align-items: flex-start;
         margin-bottom: 20px;
@@ -115,5 +140,19 @@ body {
         width: 120px;
         margin-top: 7px;
         padding-right: 20px;
+      }
+
+      .legacy_form__row {
+        margin-bottom: 10px;
+      }
+
+      .legacy_form__row legend {
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+      }
+
+      .legacy_form__row legend {
+        float: left;
       }
 }
