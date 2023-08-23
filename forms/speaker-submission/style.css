@@ -3,16 +3,12 @@
     --bg-cinza-escuro: #EAEDF0;
 
     --borda-cinza: #D6D9DC;
-    
+
     --font-header: #5D6063;
-
-
-
-
 }
 
 * {
-    padding: 0;
+padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -61,4 +57,63 @@ body {
     width: 80%;
     padding: 50px;
     margin: 0 0 40px 0;
+}
+
+.form__row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.form__row input[type='text'],
+.form__row input[type='email'],
+.form__row select,
+.form__row textarea {
+    background-color: #FFFFFF;
+    border: 1px solid var(--borda-cinza);
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form__row label {
+    margin-bottom: 15px;
+}
+
+/* for invalid outputs */ 
+.form__row input[type='text']:invalid,
+.form__row input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+}
+
+/* desktop version */
+@media only screen and (min-width: 700px) {     /* apply only on screens bigger than 700px (desktop) */
+    .speaker-form__header,
+    .form {
+        width: 600px;
+    }
+
+    .form__row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form__row input[type='text'],
+    .form__row input[type='email'] {
+        width: 250px;
+        height: initial;
+      }
+
+      .form__row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+      }
 }
