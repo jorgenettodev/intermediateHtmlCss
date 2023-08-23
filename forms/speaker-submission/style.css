@@ -146,7 +146,15 @@ body {
     margin-bottom: 30px;
 }
 
-/* desktop version */
+
+/* checkbox */
+.form__row .checkbox_label {
+    margin-bottom: 0;
+}
+
+
+
+/* >>>>>>>>>>>> DESKTOP VERSION */
 @media only screen and (min-width: 700px) {     /* apply only on screens bigger than 700px (desktop) */
     .speaker-form__header,
     .form {
@@ -184,5 +192,14 @@ body {
 
       .legacy_form__row legend {
         float: left;
+      }
+
+      .form__row .instructions {
+        margin-left: 120px;
+      }
+
+      .form__row .checkbox_label {
+        margin-left: 120px;
+        width: auto;
       }
 }
