@@ -104,7 +104,7 @@ body {
 .legacy_form__row .radio_label {
     display: block;
     font-size: 14px;
-    padding: 0 20px 0 10px;
+    padding: 0 20px 0 5px;
 }
 
 .legacy_form__row input[type='radio'] {
@@ -114,6 +114,36 @@ body {
 .legacy_form__row .radio_label,
 .legacy_form__row input[type='radio'] {
     float: left;
+}
+
+/* select element */
+.form__row select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form__row textarea {
+    /* font */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+
+    /* border, height and spacing */
+    border: 1px solid var(--borda-cinza);
+    border-radius: 3px;
+
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 7px;
+
+    /* resize none */
+    resize: none;
+}
+
+.instructions {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 /* desktop version */

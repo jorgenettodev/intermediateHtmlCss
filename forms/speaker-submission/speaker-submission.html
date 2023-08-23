@@ -10,8 +10,9 @@
     <header class="speaker-form__header">
         <h1>Speaker Submission</h1>
         <p><em>
-            Want to speak at our fake conference? Fill out
-                this' form.
+            Want to speak at our fake conference? 
+            <br>
+            Fill out this' form.
         </em></p>
     </header>
 
@@ -35,6 +36,22 @@
             <input type="radio" name="talk_type" id="talk_type2" value="main_stage" checked>
             <label for="talk_type2" class="radio_label">Workshop</label>
         </fieldset>
+
+        <div class="form__row">
+            <label for="t-Shirt">T-shirt Size</label>
+            <select name="t-shirt" id="t-shirt">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+
+        <div class="form__row">
+            <label for="abstract">Abstract</label>
+            <textarea name="abstract" id="abstract"></textarea>
+            <div class="instructions">Describe your talk in 500 words or less.</div>
+        </div>
     </form>
 </body>
 </html>
