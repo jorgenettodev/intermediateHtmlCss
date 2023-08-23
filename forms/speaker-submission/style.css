@@ -5,6 +5,10 @@
     --borda-cinza: #D6D9DC;
 
     --font-header: #5D6063;
+
+    --botao: #5995DA;
+    --botao-hover: #76AEED;
+    --botao-active: #407FC7;
 }
 
 * {
@@ -140,6 +144,8 @@ body {
     resize: none;
 }
 
+
+
 .instructions {
     color: #999999;
     font-size: 14px;
@@ -152,7 +158,34 @@ body {
     margin-bottom: 0;
 }
 
+/* button */ 
+.form__row button {
+    /* muda a fonte */
+    font-size: 16px;
+    font-weight: bold;
 
+    /* muda a cor */
+    color: #FFFFFF;
+    background-color: var(--botao);
+
+    /* tira a borda e deixa redonda */
+    border-radius: 3px;
+    border: none;
+
+    /* bota a mãozinha */
+    cursor: pointer;
+
+
+    padding: 15px 40px;
+}
+
+.form__row button:hover {
+    background-color: var(--botao-hover);
+}
+
+.form__row button:active {
+    background-color: var(--botao-active);
+}
 
 /* >>>>>>>>>>>> DESKTOP VERSION */
 @media only screen and (min-width: 700px) {     /* apply only on screens bigger than 700px (desktop) */
@@ -201,5 +234,9 @@ body {
       .form__row .checkbox_label {
         margin-left: 120px;
         width: auto;
+      }
+
+      .form__row button {
+        margin-left: 120px;
       }
 }
