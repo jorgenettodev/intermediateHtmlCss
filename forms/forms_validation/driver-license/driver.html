@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver's License Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <p class="form_row">
+            <fieldset>
+                <legend>Do you have a driver's license?*</legend>
+
+                <div>
+                    <input type="radio" name="driver-license" id="r1" value="yes" required>
+                    <label for="r1">Yes</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="driver-license" id="r2" value="no" required checked>
+                    <label for="r2">No</label>
+                </div>
+            </fieldset>
+        </p>
+
+        <p class="form_row">
+            <label for="age">How old are you?*</label>
+            <input type="number" id="age" name="age" required min="12" max="120" value="12">
+        </p>
+
+        <p class="form_row">
+            <label for="fav-fruit">What's your favorite fruit?*</label>
+            <input type="text" id="fav-fruit" name="fav-fruit" pattern="[Ww]atermelon|[Bb]anana|[Aa]pple" required>
+        </p>
+
+        <p class="form_row">
+            <label for="email">What's your email address?</label>
+            <input type="email" id="email">
+        </p>
+
+        <p class="form_row">
+            <label for="message">Leave a short message</label>
+            <textarea name="message" id="message" maxlength="144"></textarea>
+        </p>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
