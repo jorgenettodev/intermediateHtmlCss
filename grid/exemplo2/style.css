@@ -1,0 +1,17 @@
+.grid-container {
+    /* width: 400px; */
+    height: 400px;
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.grid-item {
+    background-color: #444;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
